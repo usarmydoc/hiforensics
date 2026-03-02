@@ -124,6 +124,9 @@ All results CSVs ──► 05_figures.R  (can be written before pipeline finishe
 |---|---|---|
 | [GTEx V8](https://gtexportal.org/home/downloads/adult-gtex/bulk_tissue_expression) | ~17,000 RNA-seq samples, 54 tissues, ischemic time recorded | Open — no dbGaP required |
 | [MSigDB](https://www.gsea-msigdb.org/gsea/msigdb/) | HIF/hypoxia gene sets (Hallmark, Reactome, GO, KEGG) | Open via `msigdbr` |
+| GSE216281 | Postmortem brain RNA-seq, validation attempt | Open |
+
+Note: Independent validation against brain datasets showed weak generalisation, consistent with low HIF-PMI correlation in brain tissue at training. Non-brain validation datasets (heart, muscle) are a planned next step.
 
 All data is fully open access. No controlled-access application required.
 
@@ -134,7 +137,7 @@ All data is fully open access. No controlled-access application required.
 | File | Description |
 |---|---|
 | `results/hif_scores/tissue_correlations.csv` | Partial Spearman r (HIF vs PMI) per tissue × gene set, Hardy-controlled |
-| `results/hif_scores/summary.csv` | Tissues ranked by mean \|r\| — brain regions should rank first |
+| `results/hif_scores/summary.csv` | Tissues ranked by mean |r| — GI tract and cardiovascular tissues rank highest; brain ranks mid-table due to compressed PMI variance in natural-death donors |
 | `results/hif_scores/scores_for_ml.csv` | Flat table of GSVA scores + metadata for ML |
 | `results/ml_model/global_model.joblib` | Deployable XGBoost PMI predictor |
 | `results/ml_model/tissue_models.joblib` | Per-tissue models (HIF scores only) |
@@ -153,3 +156,12 @@ All data is fully open access. No controlled-access application required.
 **Why Hardy scale is controlled but not excluded from ML features?** In the correlation analysis (Phase 1), Hardy scale is a confounder — we partial it out. In the ML model (Phase 2), it is included explicitly as a covariate so the model accounts for it rather than learning it implicitly through the HIF features. A prospective-use model without Hardy scale can be derived from the same training run.
 
 **Why donor-grouped cross-validation?** The same donor contributes samples from multiple tissues. Random splitting leaks the shared ischemic time across folds and inflates performance estimates.
+
+## Known limitations
+- Brain HIF-PMI correlation is weak (median rank 32/54 tissues). 
+  Brain GTEx samples are predominantly natural/slow deaths with narrow 
+  PMI variance, compressing the detectable signal.
+- Model validated on RNA-seq data only. Microarray GSVA scores occupy 
+  a different numerical range and require platform calibration before prediction.
+- Independent non-brain validation is pending — heart and skeletal muscle 
+  datasets are the next priority.

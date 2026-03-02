@@ -16,8 +16,6 @@ The GTEx project has collected RNA-seq from 50+ tissues across ~900 donors, each
 - Mechanistically grounded: HIF biology explains *why* the predictor works, not just that it does
 - Validated against three independent GEO postmortem datasets
 
-**Target journals:** Genome Medicine · PLOS Computational Biology · Forensic Science International: Genetics
-
 ---
 
 ## Pipeline architecture

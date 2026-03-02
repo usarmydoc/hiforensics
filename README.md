@@ -137,7 +137,7 @@ All data is fully open access. No controlled-access application required.
 | File | Description |
 |---|---|
 | `results/hif_scores/tissue_correlations.csv` | Partial Spearman r (HIF vs PMI) per tissue × gene set, Hardy-controlled |
-| `results/hif_scores/summary.csv` | Tissues ranked by mean |r| — GI tract and cardiovascular tissues rank highest; brain ranks mid-table due to compressed PMI variance in natural-death donors |
+| `results/hif_scores/summary.csv` | Tissues ranked by mean — GI tract and cardiovascular tissues rank highest; brain ranks mid-table due to compressed PMI variance in natural-death donors |
 | `results/hif_scores/scores_for_ml.csv` | Flat table of GSVA scores + metadata for ML |
 | `results/ml_model/global_model.joblib` | Deployable XGBoost PMI predictor |
 | `results/ml_model/tissue_models.joblib` | Per-tissue models (HIF scores only) |

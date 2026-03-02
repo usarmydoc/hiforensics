@@ -124,9 +124,6 @@ All results CSVs ──► 05_figures.R  (can be written before pipeline finishe
 |---|---|---|
 | [GTEx V8](https://gtexportal.org/home/downloads/adult-gtex/bulk_tissue_expression) | ~17,000 RNA-seq samples, 54 tissues, ischemic time recorded | Open — no dbGaP required |
 | [MSigDB](https://www.gsea-msigdb.org/gsea/msigdb/) | HIF/hypoxia gene sets (Hallmark, Reactome, GO, KEGG) | Open via `msigdbr` |
-| [GSE45642](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE45642) | Postmortem brain, multiple PMI timepoints | Open |
-| [GSE53987](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE53987) | Postmortem brain, well-characterised PMI | Open |
-| [GSE116754](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE116754) | Postmortem RNA stability, multi-tissue | Open |
 
 All data is fully open access. No controlled-access application required.
 
@@ -156,9 +153,3 @@ All data is fully open access. No controlled-access application required.
 **Why Hardy scale is controlled but not excluded from ML features?** In the correlation analysis (Phase 1), Hardy scale is a confounder — we partial it out. In the ML model (Phase 2), it is included explicitly as a covariate so the model accounts for it rather than learning it implicitly through the HIF features. A prospective-use model without Hardy scale can be derived from the same training run.
 
 **Why donor-grouped cross-validation?** The same donor contributes samples from multiple tissues. Random splitting leaks the shared ischemic time across folds and inflates performance estimates.
-
----
-
-## Citation
-
-Manuscript in preparation.

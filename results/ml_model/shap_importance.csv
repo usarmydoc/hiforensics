@@ -1,0 +1,72 @@
+feature,mean_abs_shap
+REACTOME_DETOXIFICATION_OF_REACTIVE_OXYGEN_SPECIES,0.053388424
+GOBP_NEGATIVE_REGULATION_OF_CELLULAR_RESPONSE_TO_HYPOXIA,0.041429795
+CUSTOM_PHD_VHL_AXIS,0.03653863
+GOBP_NEGATIVE_REGULATION_OF_HYPOXIA_INDUCED_INTRINSIC_APOPTOTIC_SIGNALING_PATHWAY,0.034540255
+GOBP_HYPOXIA_INDUCIBLE_FACTOR_1ALPHA_SIGNALING_PATHWAY,0.02400448
+GOBP_REGULATION_OF_CELLULAR_RESPONSE_TO_HYPOXIA,0.02283451
+age_mid,0.022735832
+HALLMARK_HYPOXIA,0.020110594
+REACTOME_CELLULAR_RESPONSE_TO_HYPOXIA,0.017520228
+REACTOME_PTK6_PROMOTES_HIF1A_STABILIZATION,0.01699809
+KEGG_MEDICUS_VARIANT_LOSS_OF_VHL_TO_HIF_1_SIGNALING_PATHWAY,0.015889272
+hardy_scale,0.015600338
+REACTOME_REGULATION_OF_GENE_EXPRESSION_BY_HYPOXIA_INDUCIBLE_FACTOR,0.012677343
+KEGG_MEDICUS_REFERENCE_HIF_1_SIGNALING_PATHWAY,0.012452799
+BIOCARTA_HIF_PATHWAY,0.012107559
+tissue_Pituitary,0.011705913
+GOBP_INTRINSIC_APOPTOTIC_SIGNALING_PATHWAY_IN_RESPONSE_TO_HYPOXIA,0.011050063
+tissue_Brain - Cerebellum,0.009554815
+tissue_Brain - Cortex,0.0092384275
+tissue_Whole Blood,0.006979616
+sex,0.0065745693
+tissue_Cells - Cultured fibroblasts,0.0061133043
+tissue_Skin - Not Sun Exposed (Suprapubic),0.00443513
+tissue_Thyroid,0.0032006053
+tissue_Brain - Frontal Cortex (BA9),0.0028663152
+tissue_Breast - Mammary Tissue,0.0025781128
+tissue_Brain - Cerebellar Hemisphere,0.0025303666
+tissue_Brain - Caudate (basal ganglia),0.0022934026
+tissue_Brain - Hippocampus,0.0020111974
+tissue_Adipose - Visceral (Omentum),0.0020064667
+tissue_Brain - Nucleus accumbens (basal ganglia),0.0018488598
+tissue_Adipose - Subcutaneous,0.001828041
+tissue_Minor Salivary Gland,0.0016483867
+tissue_Brain - Hypothalamus,0.0015985011
+tissue_Esophagus - Mucosa,0.0015943919
+tissue_Pancreas,0.0015352698
+tissue_Skin - Sun Exposed (Lower leg),0.0014762663
+tissue_Brain - Putamen (basal ganglia),0.0014543718
+tissue_Heart - Atrial Appendage,0.001351598
+tissue_Brain - Anterior cingulate cortex (BA24),0.001308239
+tissue_Brain - Amygdala,0.0012890747
+tissue_Esophagus - Muscularis,0.001229686
+tissue_Stomach,0.0012118272
+tissue_Muscle - Skeletal,0.001132358
+tissue_Cells - EBV-transformed lymphocytes,0.0010879347
+tissue_Brain - Substantia nigra,0.0010599506
+tissue_Artery - Tibial,0.0009880078
+tissue_Nerve - Tibial,0.0009554801
+tissue_Brain - Spinal cord (cervical c-1),0.00091818697
+tissue_Lung,0.00088684424
+tissue_Spleen,0.00087001576
+tissue_Kidney - Cortex,0.0005357918
+tissue_Artery - Aorta,0.0005193228
+tissue_Testis,0.00050851685
+tissue_Esophagus - Gastroesophageal Junction,0.00045828347
+tissue_Small Intestine - Terminal Ileum,0.00034394328
+tissue_Heart - Left Ventricle,0.00033616603
+tissue_Colon - Sigmoid,0.00028116684
+tissue_Artery - Coronary,0.00027427633
+tissue_Liver,0.00026548113
+tissue_Prostate,0.0001555123
+tissue_Uterus,0.00011113325
+tissue_Adrenal Gland,9.974603e-05
+tissue_Colon - Transverse,7.809138e-05
+tissue_Bladder,1.6353059e-05
+tissue_Cervix - Endocervix,0.0
+tissue_Cervix - Ectocervix,0.0
+tissue_Kidney - Medulla,0.0
+tissue_Fallopian Tube,0.0
+tissue_Ovary,0.0
+tissue_Vagina,0.0

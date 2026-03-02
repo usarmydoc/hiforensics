@@ -1,0 +1,24 @@
+# Large raw data — not tracked in git
+data/gtex/
+data/validation/
+
+# Generated gene set RDS (re-downloadable via scripts/01_download_msigdb.R)
+data/msigdb/*.rds
+
+# Large model and score files
+results/ml_model/*.joblib
+results/hif_scores/tissue_scores/
+results/hif_scores/scores_for_ml.csv
+
+# Logs
+logs/
+
+# R session artifacts
+.Rhistory
+.RData
+*.Rproj.user/
+
+# Python artifacts
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
